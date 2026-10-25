@@ -1,12 +1,14 @@
-
+import { Link } from "react-router";
 
 function Header() {
   return (
     <header className="w-full border-b border-gray-200 bg-white/80 px-6 py-4 shadow-sm backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
-        <a href="#" className="text-xl font-semibold tracking-tight text-gray-900">
-          BookFinds
-        </a>
+        <ul>
+          <li className="text-xl font-semibold tracking-tight text-gray-900">
+            BookFinds
+          </li>
+        </ul>
 
         <nav className="flex items-center gap-3">
           <button
@@ -15,19 +17,25 @@ function Header() {
           >
             Switch to Dark Mode
           </button>
-          <a href="#" className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
-            Profile
-          </a>
-          <a href="#" className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
-            Cart
-          </a>
-          <a href="#" className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
-            About
-          </a>
+          <ul className="flex items-center gap-3">
+            <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
+              Profile
+            </li>
+            <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
+              <Link to="/Books">Books</Link>
+            </li>
+            <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
+              <Link to="/Bookmark">Bookmark</Link>
+            </li>
+
+            <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
+              About
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
