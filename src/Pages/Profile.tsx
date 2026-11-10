@@ -1,7 +1,7 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { Link } from "react-router";
-import { FormEvent, useState } from "react";
+import { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router";
 import { supabase } from "../lib/supabaseClient";
 
