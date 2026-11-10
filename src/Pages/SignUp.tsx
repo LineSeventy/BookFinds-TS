@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { supabase } from "../lib/supabaseClient";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
