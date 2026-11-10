@@ -20,10 +20,8 @@ BookFinds is a book price comparison website inspired by PC Part Picker. The goa
 
 - React + TypeScript
 - Express
-- Firebase for account creation and authentication
 - PostgreSQL via Supabase
 - Vercel for frontend deployment
-- Render for backend deployment
 
 ## Development
 
