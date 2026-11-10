@@ -19,7 +19,7 @@ function Header() {
           </button>
           <ul className="flex items-center gap-3">
             <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
-              <Link to="/Profile">Profile</Link>
+              <Link to="/login">Profile</Link>
             </li>
             <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
               <Link to="/Books">Books</Link>
