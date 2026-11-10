@@ -1,7 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { supabase } from "../lib/supabaseClient";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import { supabase } from "../Lib/supabaseClient";
 import ConfirmEmail from "../Features/Components/ConfirmEmail";
 
 type Status = "idle" | "loading" | "check-email" | "error";
@@ -39,7 +37,6 @@ const SignUp = () => {
   }
   return (
     <>
-      <Header />
       <form
         onSubmit={handleSubmit}
         className="mx-auto my-12 w-[calc(100%-3rem)] max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-lg sm:p-8"
@@ -108,7 +105,6 @@ const SignUp = () => {
           )}
         </div>
       </form>
-      <Footer />
     </>
   );
 };

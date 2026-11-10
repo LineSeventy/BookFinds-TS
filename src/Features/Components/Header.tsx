@@ -17,6 +17,7 @@ function Header() {
           >
             Switch to Dark Mode
           </button>
+          //TODO
           <ul className="flex items-center gap-3">
             <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
               <Link to="/Profile">Profile</Link>
@@ -29,7 +30,7 @@ function Header() {
             </li>
 
             <li className="text-sm font-medium text-gray-700 transition hover:text-gray-900">
-              About
+              //TODO About
             </li>
           </ul>
         </nav>
